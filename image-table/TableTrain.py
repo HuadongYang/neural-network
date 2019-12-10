@@ -3,9 +3,15 @@ import ImageHandler as hd
 from time import time
 
 def getData():
-    train_data = hd.readFile('C:/Users/yanghd/Desktop/desk/工作/文字识别/download/p2_json/img.png')
-    label_data = hd.readFile('C:/Users/yanghd/Desktop/desk/工作/文字识别/download/p2_json/label.png')
-    return train_data, label_data
+    train_data = hd.handle('C:/Users/yanghd/Desktop/desk/工作/文字识别/download/p4_json/label.png', 300,300)
+    label_data = hd.handle('C:/Users/yanghd/Desktop/desk/工作/文字识别/download/p4_json/label.png', 300,300)
+    return train_data.numpy(), label_data.numpy()
+def preHandleData(train_lable):
+    print(train_lable.shape)
+    train_lable = train_lable.reshape((487*222*4))
+    print(train_lable.shape)
+    return train_lable
+
 def train(train_data, label_data):
     model = tf.keras.Sequential()
     model.add(tf.keras.layers.Flatten())
@@ -24,6 +30,12 @@ def train(train_data, label_data):
     plt.show()
 if __name__ == '__main__':
     train_data, label_data = getData()
-    train(train_data, label_data)
+    print(label_data.shape)
+
+    print("1: ", train_data[:,:,1].shape)
+    print("1: ", train_data[1,1,:])
+    #train_data = preHandleData(train_data)
+    #label_data = preHandleData(label_data)
+    #train(train_data, label_data)
 
 

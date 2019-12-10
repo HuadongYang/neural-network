@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcf024be-239a-4352-a1d6-7e8e8c5ceb42" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/image-table/TableTrain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/minostPrac1/lineFit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/neural-network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/neural-network.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image-table/image_read.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/image-table/ImageHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/image-table/ImageHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minostPrac1/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/minostPrac1/mnistTrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image-table/TableTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/image-table/TableTrain.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="F:/Program_Files/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -52,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mnistTrain">
+  <component name="RunManager" selected="Python.image_read">
     <configuration name="ImageHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="neural-network" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lineFit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="image_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="neural-network" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,12 +103,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minostPrac1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/image-table" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/minostPrac1/lineFit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image-table/image_read.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mnistTrain" />
-        <item itemvalue="Python.TableTrain" />
+        <item itemvalue="Python.image_read" />
         <item itemvalue="Python.ImageHandler" />
-        <item itemvalue="Python.lineFit" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.TableTrain" />
+        <item itemvalue="Python.mnistTrain" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +181,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575446582127</updated>
-      <workItem from="1575446583904" duration="21120000" />
+      <workItem from="1575446583904" duration="22525000" />
+      <workItem from="1575957641584" duration="10498000" />
     </task>
     <servers />
   </component>
@@ -195,7 +194,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -206,13 +207,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/image-table/TableTrain.py</url>
-          <line>10</line>
+          <line>16</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/image-table/ImageHandler.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -226,10 +222,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/neural_network$mnistTrain.coverage" NAME="mnistTrain Coverage Results" MODIFIED="1575882254315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minostPrac1" />
-    <SUITE FILE_PATH="coverage/neural_network$TableTrain.coverage" NAME="TableTrain Coverage Results" MODIFIED="1575881773521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image-table" />
+    <SUITE FILE_PATH="coverage/neural_network$TableTrain.coverage" NAME="TableTrain Coverage Results" MODIFIED="1575957719080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image-table" />
     <SUITE FILE_PATH="coverage/neural_network$test.coverage" NAME="test Coverage Results" MODIFIED="1575469815262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minostPrac1" />
-    <SUITE FILE_PATH="coverage/neural_network$ImageHandler.coverage" NAME="ImageHandler Coverage Results" MODIFIED="1575880220158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image-table" />
+    <SUITE FILE_PATH="coverage/neural_network$ImageHandler.coverage" NAME="ImageHandler Coverage Results" MODIFIED="1575962091014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image-table" />
     <SUITE FILE_PATH="coverage/neural_network$lineFit.coverage" NAME="lineFit Coverage Results" MODIFIED="1575873877731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minostPrac1" />
-    <SUITE FILE_PATH="coverage/neural_network$main.coverage" NAME="main Coverage Results" MODIFIED="1575870103496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/labelme" />
+    <SUITE FILE_PATH="coverage/neural_network$image_read.coverage" NAME="image_read Coverage Results" MODIFIED="1575968150314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/image-table" />
+    <SUITE FILE_PATH="coverage/neural_network$main.coverage" NAME="main Coverage Results" MODIFIED="1575959573884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/labelme" />
   </component>
 </project>
